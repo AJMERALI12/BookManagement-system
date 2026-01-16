@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+
+      font-family: Arial, sans-serif;
+    padding: 20px;
+    background: white;
+    transition: 0.3s;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* ===== DARK MODE ===== */
+.themeToggle {
+    width: 50px;
+    height: 25px;
+    background: #aaa;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.ball {
+    width: 23px;
+    height: 23px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.dark {
+    background: #111;
+    color: white;
+}
+
+.dark table,
+.dark th,
+.dark td {
+    border-color: #ddd;
+}
+
+.dark .themeToggle {
+    background: #333;
+}
+
+.dark .ball {
+    transform: translateX(24px);
+    background: yellow;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* ===== FORM ===== */
+#Addbook {
+  
+    width: 100%;
+    max-width: 350px;
+    border: 3px solid #555;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    background: blueviolet;
+    
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background: tomato;
+    transform: scale(1.1);
+}
+
+/* ===== TABLE ===== */
+#BookTable {
+  
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+
+.edit {
+    background: orange;
+    color: white;
+    padding: 5px;
+}
+
+.delete {
+    background: red;
+    color: white;
+    padding: 5px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
