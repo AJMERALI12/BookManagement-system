@@ -11,10 +11,14 @@ body  {
     padding: 20px;
     background: white;
     transition: 0.3s;
+    background-image: url(laibrary.jpg);
 }
 
 h1 {
+    font-size: 50px;
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 /* ===== DARK MODE ===== */
@@ -74,6 +78,7 @@ h1 {
     border: 3px solid #555;
     padding: 20px;
     border-radius: 10px;
+    background-color: #b3edf6;
 }
 
 label {
@@ -108,9 +113,12 @@ button:hover {
     transform: scale(1.1);
 }
 
+
+
+
 /* ===== TABLE ===== */
 #BookTable {
-  
+    background-color:#b3edf6;
     width: 100%;
     overflow-x: auto;
 }
